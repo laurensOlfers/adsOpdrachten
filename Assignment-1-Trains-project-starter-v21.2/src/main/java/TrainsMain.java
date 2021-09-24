@@ -6,7 +6,7 @@ import models.Train;
 public class TrainsMain {
 
     public static void main(String[] args) {
-
+        System.out.println("dit is een test");
         System.out.println("Welcome to the HvA trains configurator");
 
         Locomotive rembrandt = new Locomotive(24531, 7);
