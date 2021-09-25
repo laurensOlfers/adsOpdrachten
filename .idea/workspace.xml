@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="">
+    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="dit is een sout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/TrainsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/TrainsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Locomotive.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Locomotive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Wagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Wagon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Wagon.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Wagon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/test-classes/models/WagonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/test-classes/models/WagonTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +38,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.TrainTest">
-    <configuration name="TrainsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TrainsMain" />
-      <module name="trains-starter" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.WagonTest.T04_DetachingThirdWagonFromSequenceOfFourShouldResultInTwoSequences">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -53,7 +52,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WagonTest.T03_TheLastWagonShouldReportATailLengthOfZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
         <pattern>
@@ -62,29 +61,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainTest.T11_AFreightTrainIsNotAPassengerTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
-      <option name="METHOD_NAME" value="T11_AFreightTrainIsNotAPassengerTrain" />
+      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
+      <option name="METHOD_NAME" value="T03_TheLastWagonShouldReportATailLengthOfZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WagonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WagonTest.T03_TheLastWagonShouldReturnTheLastOfTheSequence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
         <pattern>
@@ -94,12 +78,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="T03_TheLastWagonShouldReturnTheLastOfTheSequence" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WagonTest.T02_APassengerWagonShouldReportCorrectProperties" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WagonTest.T03_TheSecondLastWagonShouldReturnTheLastOfTheSequence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +94,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
-      <option name="METHOD_NAME" value="T02_APassengerWagonShouldReportCorrectProperties" />
+      <option name="METHOD_NAME" value="T03_TheSecondLastWagonShouldReturnTheLastOfTheSequence" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WagonTest.T04_AttachingFourWagonsShouldResultInSequenceOfFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trains-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
+      <option name="METHOD_NAME" value="T04_AttachingFourWagonsShouldResultInSequenceOfFour" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WagonTest.T04_DetachingThirdWagonFromSequenceOfFourShouldResultInTwoSequences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trains-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
+      <option name="METHOD_NAME" value="T04_DetachingThirdWagonFromSequenceOfFourShouldResultInTwoSequences" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TrainTest" />
-        <item itemvalue="JUnit.WagonTest" />
-        <item itemvalue="Application.TrainsMain" />
-        <item itemvalue="JUnit.WagonTest.T02_APassengerWagonShouldReportCorrectProperties" />
-        <item itemvalue="JUnit.TrainTest.T11_AFreightTrainIsNotAPassengerTrain" />
+        <item itemvalue="JUnit.WagonTest.T04_DetachingThirdWagonFromSequenceOfFourShouldResultInTwoSequences" />
+        <item itemvalue="JUnit.WagonTest.T04_AttachingFourWagonsShouldResultInSequenceOfFour" />
+        <item itemvalue="JUnit.WagonTest.T03_TheLastWagonShouldReturnTheLastOfTheSequence" />
+        <item itemvalue="JUnit.WagonTest.T03_TheLastWagonShouldReportATailLengthOfZero" />
+        <item itemvalue="JUnit.WagonTest.T03_TheSecondLastWagonShouldReturnTheLastOfTheSequence" />
       </list>
     </recent_temporary>
   </component>
@@ -135,8 +152,16 @@
       <updated>1632387629714</updated>
       <workItem from="1632387631616" duration="57000" />
       <workItem from="1632387704204" duration="2582000" />
-      <workItem from="1632391220033" duration="1377000" />
+      <workItem from="1632391220033" duration="9068000" />
     </task>
+    <task id="LOCAL-00001" summary="dit is een sout">
+      <created>1632472517388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632472517388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,5 +177,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dit is een sout" />
+    <option name="LAST_COMMIT_MESSAGE" value="dit is een sout" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

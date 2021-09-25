@@ -34,7 +34,6 @@ public class Wagon {
      * @return whether this wagon has a wagon appended at the tail
      */
     public boolean hasNextWagon() {
-
         return this.nextWagon != null;
     }
 
@@ -42,19 +41,21 @@ public class Wagon {
      * @return whether this wagon has a wagon prepended at the front
      */
     public boolean hasPreviousWagon() {
-        return this.previousWagon !=null;
+        return this.previousWagon != null;
     }
 
     /**
      * Returns the last wagon attached to it, if there are no wagons attached to it then this wagon is the last wagon.
-     *
      * @return the wagon
      */
     public Wagon getLastWagonAttached() {
-        // TODO find the last wagon in the sequence
+      Wagon currentWagon = this;
+      while (currentWagon.hasNextWagon()){
+          currentWagon=currentWagon.nextWagon;
+      }
+        return currentWagon;
 
 
-        return null;
     }
 
     /**
@@ -62,9 +63,15 @@ public class Wagon {
      * excluding this wagon itself.
      */
     public int getTailLength() {
-        // TODO traverse the tail and find its length
+        int length = 0;
+        Wagon currentWagon = this;
 
-        return 0;
+        while (currentWagon.hasNextWagon()) {
+            length++;
+            currentWagon = currentWagon.getNextWagon();
+        }
+        return length;
+
     }
 
     /**
@@ -80,6 +87,17 @@ public class Wagon {
         // TODO verify the exceptions
 
         // TODO attach the tail wagon to this wagon (sustaining the invariant propositions).
+
+        if (this.getNextWagon() != null) {
+            throw new RuntimeException("This wagon is already attached!");
+       } else if (tail.getPreviousWagon() != null) {
+          throw new RuntimeException("This wagon does not fit here!");
+      } else {
+            tail.previousWagon = this;
+           this.nextWagon = tail;
+       }
+
+
     }
 
     /**
@@ -147,4 +165,10 @@ public class Wagon {
     }
 
     // TODO
+
+
+    @Override
+    public String toString() {
+        return "[Wagon-" + this.getId() + "]";
+    }
 }
