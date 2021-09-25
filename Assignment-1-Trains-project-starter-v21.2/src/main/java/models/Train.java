@@ -1,3 +1,5 @@
+/*
+* Voor Thomas*/
 package models;
 
 public class Train {
@@ -46,25 +48,31 @@ public class Train {
      * @param wagon the first wagon of a sequence of wagons to be attached
      */
     public void setFirstWagon(Wagon wagon) {
-        // TODO
+        this.firstWagon = wagon;
     }
 
     /**
      * @return the number of Wagons connected to the train
      */
     public int getNumberOfWagons() {
-        // TODO
-
-        return 0;
+        int numberOfWagons = 1;
+        Wagon wagonCheckHasNext = this.firstWagon;
+        while (wagonCheckHasNext.hasNextWagon() == true) {
+            wagonCheckHasNext = wagonCheckHasNext.getNextWagon();
+            numberOfWagons++;
+        }
+        return numberOfWagons;
     }
 
     /**
      * @return the last wagon attached to the train
      */
     public Wagon getLastWagonAttached() {
-        // TODO
-
-        return null;
+        Wagon lastWagon = this.firstWagon;
+        while (lastWagon.hasNextWagon() == true) {
+            lastWagon = lastWagon.getNextWagon();
+        }
+        return lastWagon;
     }
 
     /**
@@ -72,9 +80,17 @@ public class Train {
      * (return 0 for a freight train)
      */
     public int getTotalNumberOfSeats() {
-        // TODO
-
-        return 0;
+        int numberOfSeats = 0;
+        Wagon wagonCheckHasNext = this.firstWagon;
+        System.out.println(wagonCheckHasNext);
+        if (isFreightTrain()) {
+            return 0;
+        }
+        while (wagonCheckHasNext.hasNextWagon() == true) {
+            numberOfSeats = numberOfSeats + ((PassengerWagon) wagonCheckHasNext).getNumberOfSeats();
+            wagonCheckHasNext = wagonCheckHasNext.getNextWagon();
+        }
+        return numberOfSeats;
     }
 
     /**
@@ -84,9 +100,16 @@ public class Train {
      * (return 0 for a passenger train)
      */
     public int getTotalMaxWeight() {
-        // TODO
-
-        return 0;
+        int TotalMaxWeight = 0;
+        Wagon wagonCheckHasNext = this.firstWagon;
+        if (isPassengerTrain()) {
+            return 0;
+        }
+        while (wagonCheckHasNext.hasNextWagon() == true) {
+            TotalMaxWeight = TotalMaxWeight + ((FreightWagon) wagonCheckHasNext).getMaxWeight();
+            wagonCheckHasNext = wagonCheckHasNext.getNextWagon();
+        }
+        return TotalMaxWeight;
     }
 
     /**
@@ -97,8 +120,15 @@ public class Train {
      * (return null if the position is not valid for this train)
      */
     public Wagon findWagonAtPosition(int position) {
-        // TODO
-
+        int numberNumberofWagons = 1;
+        Wagon wagonAtPosition = this.firstWagon;
+        while (wagonAtPosition.hasNextWagon() == true) {
+            wagonAtPosition = wagonAtPosition.getNextWagon();
+            numberNumberofWagons++;
+            if (numberNumberofWagons == position) {
+                return wagonAtPosition;
+            }
+        }
         return null;
     }
 
@@ -110,8 +140,13 @@ public class Train {
      * (return null if no wagon was found with the given wagonId)
      */
     public Wagon findWagonById(int wagonId) {
-        // TODO
-
+        Wagon wagonById = firstWagon;
+        while (wagonById.hasNextWagon() == true) {
+            wagonById = wagonById.getNextWagon();
+            if (wagonById.getId() == wagonId) {
+                return wagonById;
+            }
+        }
         return null;
     }
 
@@ -124,8 +159,17 @@ public class Train {
      * @return
      */
     public boolean canAttach(Wagon wagon) {
-        // TODO
-
+        if (getNumberOfWagons() >= this.engine.getMaxWagons()) {
+            return false;
+        }
+        if (this.firstWagon == null) {
+            System.out.println(this.firstWagon.getClass());
+            return true;
+        }
+        if ((isFreightTrain() && wagon instanceof FreightWagon) ||
+                (isPassengerTrain() && wagon instanceof PassengerWagon)) {
+            return true;
+        }
         return false;
     }
 
@@ -139,9 +183,11 @@ public class Train {
      * @return whether the attachment could be completed successfully
      */
     public boolean attachToRear(Wagon wagon) {
-        // TODO
-
-        return false;
+        if (canAttach(wagon) == false) {
+            return false;
+            //Ben nu hier mee bezig
+        }
+        return true;
     }
 
 
