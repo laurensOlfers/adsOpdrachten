@@ -189,9 +189,9 @@ public abstract class Wagon {
                 break;
             }
         }
-        //connect cur and previousWagon
+        
         currendWagon.previousWagon = previousWagon;
-        //if it's called on the first wagon
+
         if (previousWagon != null) {
             previousWagon.nextWagon = currendWagon;
         }
