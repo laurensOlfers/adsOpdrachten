@@ -86,9 +86,9 @@ public abstract class Wagon {
     public void attachTail(Wagon tail) {
 
         if (this.getNextWagon() != null) {
-            throw new RuntimeException("This wagon is already attached!");
+            throw new IllegalStateException("This wagon"+this.toString()+ "is already attached to "+ this.nextWagon.toString());
        } else if (tail.getPreviousWagon() != null) {
-          throw new RuntimeException("This wagon does not fit here!");
+          throw new IllegalStateException("This wagon" +tail.toString() +"is already attached to "+tail.previousWagon.toString());
       } else {
             tail.previousWagon = this;
            this.nextWagon = tail;
@@ -102,8 +102,6 @@ public abstract class Wagon {
      * or <code>null</code> if it had no wagons attached to its tail.
      */
     public Wagon detachTail() {
-        // TODO detach the tail from this wagon (sustaining the invariant propositions).
-        //  and return the head wagon of that tail
 
         if (this.hasNextWagon()){
             Wagon oldNextWagon = this.getNextWagon();
@@ -123,8 +121,6 @@ public abstract class Wagon {
      * or <code>null</code> if it had no previousWagon.
      */
     public Wagon detachFront() {
-        // TODO detach this wagon from its predecessor (sustaining the invariant propositions).
-        //   and return that predecessor
         if(this.hasPreviousWagon()){
             Wagon oldFront = this.previousWagon;
             oldFront.nextWagon=null;

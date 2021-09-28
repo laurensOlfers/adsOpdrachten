@@ -17,6 +17,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1yXAb8kf0pDxnGvurVpGRCkiOVa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -34,7 +42,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.WagonTest.T03_AttachTailCanOnlyConnectHeadWagons">
+  <component name="RunManager" selected="JUnit.WagonTest">
+    <configuration name="TrainsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TrainsMain" />
+      <module name="trains-starter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -79,22 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WagonTest.T04_RemoveLastWagonFromThreeShouldResultInSequenceOfTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
-      <option name="METHOD_NAME" value="T04_RemoveLastWagonFromThreeShouldResultInSequenceOfTwo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="WagonTest.T05_PartiallyReverseASequenceOfFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
@@ -129,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WagonTest.T03_AttachTailCanOnlyConnectHeadWagons" />
         <item itemvalue="JUnit.WagonTest" />
+        <item itemvalue="JUnit.WagonTest.T03_AttachTailCanOnlyConnectHeadWagons" />
+        <item itemvalue="Application.TrainsMain" />
         <item itemvalue="JUnit.WagonTest.T05_PartiallyReverseASequenceOfFour" />
         <item itemvalue="JUnit.WagonTest.T05_WholeSequenceOfFourShouldBeReversed" />
-        <item itemvalue="JUnit.WagonTest.T04_RemoveLastWagonFromThreeShouldResultInSequenceOfTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +146,7 @@
       <updated>1632387629714</updated>
       <workItem from="1632387631616" duration="57000" />
       <workItem from="1632387704204" duration="2582000" />
-      <workItem from="1632391220033" duration="15566000" />
+      <workItem from="1632391220033" duration="20482000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
@@ -178,6 +177,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="dit is een sout" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <inline-watch fileUrl="file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java" line="185">
         <watch expression="((WagonTest)this).passengerWagon2" language="JAVA" custom="models.WagonTest" />
