@@ -1,6 +1,6 @@
 package models;
 
-public class Wagon {
+public abstract class Wagon {
     protected int id;               // some unique ID of a Wagon
     private Wagon nextWagon;        // another wagon that is appended at the tail of this wagon
     // a.k.a. the successor of this wagon in a sequence
@@ -34,7 +34,6 @@ public class Wagon {
      * @return whether this wagon has a wagon appended at the tail
      */
     public boolean hasNextWagon() {
-
         return this.nextWagon != null;
     }
 
@@ -42,19 +41,21 @@ public class Wagon {
      * @return whether this wagon has a wagon prepended at the front
      */
     public boolean hasPreviousWagon() {
-        return this.previousWagon !=null;
+        return this.previousWagon != null;
     }
 
     /**
      * Returns the last wagon attached to it, if there are no wagons attached to it then this wagon is the last wagon.
-     *
      * @return the wagon
      */
     public Wagon getLastWagonAttached() {
-        // TODO find the last wagon in the sequence
+      Wagon currentWagon = this;
+      while (currentWagon.hasNextWagon()){
+          currentWagon=currentWagon.nextWagon;
+      }
+        return currentWagon;
 
 
-        return null;
     }
 
     /**
@@ -62,9 +63,15 @@ public class Wagon {
      * excluding this wagon itself.
      */
     public int getTailLength() {
-        // TODO traverse the tail and find its length
+        int length = 0;
+        Wagon currentWagon = this;
 
-        return 0;
+        while (currentWagon.hasNextWagon()) {
+            length++;
+            currentWagon = currentWagon.getNextWagon();
+        }
+        return length;
+
     }
 
     /**
@@ -77,9 +84,15 @@ public class Wagon {
      * @throws IllegalStateException if tail is already attached to a wagon in front of it.
      */
     public void attachTail(Wagon tail) {
-        // TODO verify the exceptions
 
-        // TODO attach the tail wagon to this wagon (sustaining the invariant propositions).
+        if (this.getNextWagon() != null) {
+            throw new IllegalStateException("This wagon"+this.toString()+ "is already attached to "+ this.nextWagon.toString());
+       } else if (tail.getPreviousWagon() != null) {
+          throw new IllegalStateException("This wagon" +tail.toString() +"is already attached to "+tail.previousWagon.toString());
+      } else {
+            tail.previousWagon = this;
+           this.nextWagon = tail;
+       }
     }
 
     /**
@@ -89,8 +102,13 @@ public class Wagon {
      * or <code>null</code> if it had no wagons attached to its tail.
      */
     public Wagon detachTail() {
-        // TODO detach the tail from this wagon (sustaining the invariant propositions).
-        //  and return the head wagon of that tail
+
+        if (this.hasNextWagon()){
+            Wagon oldNextWagon = this.getNextWagon();
+            oldNextWagon.previousWagon=null;
+            this.nextWagon=null;
+            return oldNextWagon;
+        }
 
         return null;
     }
@@ -103,8 +121,12 @@ public class Wagon {
      * or <code>null</code> if it had no previousWagon.
      */
     public Wagon detachFront() {
-        // TODO detach this wagon from its predecessor (sustaining the invariant propositions).
-        //   and return that predecessor
+        if(this.hasPreviousWagon()){
+            Wagon oldFront = this.previousWagon;
+            oldFront.nextWagon=null;
+            this.previousWagon=null;
+            return oldFront;
+        }
 
         return null;
     }
@@ -118,9 +140,11 @@ public class Wagon {
      * @param front the wagon to which this wagon must be attached to.
      */
     public void reAttachTo(Wagon front) {
-        // TODO detach any existing connections that will be rearranged
 
-        // TODO attach this wagon to its new predecessor front (sustaining the invariant propositions).
+        this.detachFront();
+       front.nextWagon=this;
+       this.previousWagon=front;
+
     }
 
     /**
@@ -128,7 +152,16 @@ public class Wagon {
      * and reconnects its tail to the wagon in front of it, if it exists.
      */
     public void removeFromSequence() {
-        // TODO
+        Wagon nextWagon = this.getNextWagon();
+        Wagon previousWagon = this.getPreviousWagon();
+        if(hasNextWagon()) {
+            this.nextWagon = null;
+            nextWagon.previousWagon = previousWagon;
+        }
+        if(hasPreviousWagon()) {
+            this.previousWagon = null;
+            previousWagon.nextWagon = nextWagon;
+        }
     }
 
 
@@ -140,11 +173,35 @@ public class Wagon {
      * @return the new start Wagon of the reversed sequence (with is the former last Wagon of the original sequence)
      */
     public Wagon reverseSequence() {
-        // TODO provide an iterative implementation,
-        //   using attach- and detach methods of this class
+        Wagon previousWagon = this.getPreviousWagon();
+        Wagon previous = null;
+        Wagon next;
+        Wagon currendWagon = this;
 
-        return null;
+        while(true) {
+            next = currendWagon.getNextWagon();
+            currendWagon.nextWagon = previous;
+            currendWagon.previousWagon = next;
+            previous = currendWagon;
+            if(next != null) {
+                currendWagon = next;
+            } else {
+                break;
+            }
+        }
+        
+        currendWagon.previousWagon = previousWagon;
+
+        if (previousWagon != null) {
+            previousWagon.nextWagon = currendWagon;
+        }
+        return previous;
     }
 
-    // TODO
+
+
+    @Override
+    public String toString() {
+        return "[Wagon-" + this.getId() + "]";
+    }
 }

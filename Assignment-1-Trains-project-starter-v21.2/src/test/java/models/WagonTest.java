@@ -101,8 +101,8 @@ public class WagonTest {
         passengerWagon2.attachTail(passengerWagon3);
         passengerWagon3.attachTail(passengerWagon4);
 
-        assertEquals(3, passengerWagon1.getTailLength(),
-                "After three attachments a wagon's tail should have length=3");
+     assertEquals(3, passengerWagon1.getTailLength(),
+          "After three attachments a wagon's tail should have length=3");
     }
 
     @Test

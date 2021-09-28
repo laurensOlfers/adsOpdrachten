@@ -14,5 +14,6 @@ public class Locomotive {
         return maxWagons;
     }
 
-    //todo tostring
+
+
 }
