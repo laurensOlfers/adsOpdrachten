@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Train toevoegingen tot attachToRear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Locomotive.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Locomotive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Wagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Wagon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/TrainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/TrainsMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/TrainsMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Train.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Wagon.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Wagon.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Thomas" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,22 +51,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="Application.TrainsMain">
-    <configuration name="TrainsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TrainsMain" />
-      <module name="trains-starter" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TrainTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,13 +76,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
+      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WagonTest.T03_AttachTailCanOnlyConnectHeadWagons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainTest.T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
         <pattern>
@@ -90,14 +91,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
-      <option name="METHOD_NAME" value="T03_AttachTailCanOnlyConnectHeadWagons" />
+      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
+      <option name="METHOD_NAME" value="T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WagonTest.T05_PartiallyReverseASequenceOfFour" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainTest.T11_AWagonCannotBeAddedToSameTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +107,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
-      <option name="METHOD_NAME" value="T05_PartiallyReverseASequenceOfFour" />
+      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
+      <option name="METHOD_NAME" value="T11_AWagonCannotBeAddedToSameTrain" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WagonTest.T05_WholeSequenceOfFourShouldBeReversed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrainTest.T12_ATrainWithSevenWagonsShouldReportThose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="trains-starter" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +123,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.WagonTest" />
-      <option name="METHOD_NAME" value="T05_WholeSequenceOfFourShouldBeReversed" />
+      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
+      <option name="METHOD_NAME" value="T12_ATrainWithSevenWagonsShouldReportThose" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrainTest.T16_CantInsertWagonAlreadyOnTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="trains-starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
+      <option name="METHOD_NAME" value="T16_CantInsertWagonAlreadyOnTrain" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,14 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TrainsMain" />
         <item itemvalue="JUnit.TrainTest" />
-        <item itemvalue="JUnit.WagonTest" />
-        <item itemvalue="JUnit.WagonTest.T02_APassengerWagonShouldReportCorrectProperties" />
-        <item itemvalue="JUnit.TrainTest.T11_AFreightTrainIsNotAPassengerTrain" />
-        <item itemvalue="JUnit.WagonTest.T03_AttachTailCanOnlyConnectHeadWagons" />
-        <item itemvalue="JUnit.WagonTest.T05_PartiallyReverseASequenceOfFour" />
-        <item itemvalue="JUnit.WagonTest.T05_WholeSequenceOfFourShouldBeReversed" />
+        <item itemvalue="JUnit.TrainTest.T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" />
+        <item itemvalue="JUnit.TrainTest.T12_ATrainWithSevenWagonsShouldReportThose" />
+        <item itemvalue="JUnit.TrainTest.T16_CantInsertWagonAlreadyOnTrain" />
+        <item itemvalue="JUnit.TrainTest.T11_AWagonCannotBeAddedToSameTrain" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +169,7 @@
       <workItem from="1632391220033" duration="1377000" />
       <workItem from="1632506618413" duration="10104000" />
       <workItem from="1632391220033" duration="20875000" />
+      <workItem from="1633003469545" duration="38950000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
@@ -180,7 +195,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Thomas" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -201,16 +216,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="53" />
+          <url>file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/TrainsMain.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/WagonTest.java" line="185">
-        <watch expression="((WagonTest)this).passengerWagon2" language="JAVA" custom="models.WagonTest" />
-      </inline-watch>
-    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/adsOpdrachten$TrainTest.ic" NAME="TrainTest Coverage Results" MODIFIED="1633271810532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>models.*</FILTER>
+    </SUITE>
   </component>
 </project>

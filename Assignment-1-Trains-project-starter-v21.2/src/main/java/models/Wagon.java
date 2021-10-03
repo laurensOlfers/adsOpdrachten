@@ -71,7 +71,6 @@ public abstract class Wagon {
             currentWagon = currentWagon.getNextWagon();
         }
         return length;
-
     }
 
     /**
@@ -84,7 +83,6 @@ public abstract class Wagon {
      * @throws IllegalStateException if tail is already attached to a wagon in front of it.
      */
     public void attachTail(Wagon tail) {
-
         if (this.getNextWagon() != null) {
             throw new IllegalStateException("This wagon"+this.toString()+ "is already attached to "+ this.nextWagon.toString());
        } else if (tail.getPreviousWagon() != null) {

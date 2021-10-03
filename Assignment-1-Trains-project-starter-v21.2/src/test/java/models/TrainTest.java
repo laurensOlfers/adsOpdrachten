@@ -42,7 +42,8 @@ public class TrainTest {
         freightWagon1.attachTail(freightWagon2);
     }
 
-    // TODO extra test representation invariant
+
+
     @AfterEach
     private void representationInvariant() {
         assertTrue(!passengerWagon1.hasNextWagon() || passengerWagon1 == passengerWagon1.getNextWagon().getPreviousWagon());
@@ -57,6 +58,20 @@ public class TrainTest {
         for (Wagon wagon = freightTrain.getFirstWagon(); wagon != null; wagon = wagon.getNextWagon()) {
             assertTrue(!wagon.hasPreviousWagon() || wagon == wagon.getPreviousWagon().getNextWagon());
         }
+    }
+    /*Er is gekozen voor deze test, omdat volgens testcoverage.
+    Dit de enige methode is die niet getest wordt en de overige methodes voldoende getest lijken te zijn.*/
+    @Test
+    public void T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove(){
+        Locomotive locLaurensThomas = new Locomotive(54823, 10);
+        Train passengerTrain1 = new Train(locLaurensThomas, "Begin", "Eind");
+        assertEquals("[Loc-24531][Wagon-8001][Wagon-8002][Wagon-8003][Wagon-8004][Wagon-8005][Wagon-8006][Wagon-8007] with 7 wagons from Amsterdam to Paris",passengerTrain.toString());
+        assertEquals("[Loc-54823] with 0 wagons from Begin to Eind",passengerTrain1.toString());
+        Wagon testTrein1 = passengerTrain.findWagonAtPosition(2);
+        testTrein1.removeFromSequence();
+        passengerTrain1.insertAtPosition(1, testTrein1);
+        assertEquals("[Loc-24531][Wagon-8001][Wagon-8003][Wagon-8004][Wagon-8005][Wagon-8006][Wagon-8007] with 6 wagons from Amsterdam to Paris",passengerTrain.toString());
+        assertEquals("[Loc-54823][Wagon-8002] with 1 wagons from Begin to Eind",passengerTrain1.toString());
     }
 
     @Test
@@ -294,7 +309,6 @@ public class TrainTest {
 
     @Test
     public void T18_checkReverseTrain() {
-
         // check type compatibility and loc capacity
         passengerTrain.reverse();
         assertEquals(7, passengerTrain.getNumberOfWagons());
