@@ -56,16 +56,21 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="JUnit.TrainTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.SupermarketStatisticsMain">
+    <configuration name="SupermarketStatisticsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SupermarketStatisticsMain" />
+      <module name="supermarket-statistics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,22 +101,6 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
       <option name="METHOD_NAME" value="T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainTest.T11_AWagonCannotBeAddedToSameTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
-      <option name="METHOD_NAME" value="T11_AWagonCannotBeAddedToSameTrain" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SupermarketStatisticsMain" />
         <item itemvalue="JUnit.TrainTest" />
         <item itemvalue="JUnit.TrainTest.T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" />
         <item itemvalue="JUnit.TrainTest.T12_ATrainWithSevenWagonsShouldReportThose" />
         <item itemvalue="JUnit.TrainTest.T16_CantInsertWagonAlreadyOnTrain" />
-        <item itemvalue="JUnit.TrainTest.T11_AWagonCannotBeAddedToSameTrain" />
       </list>
     </recent_temporary>
   </component>
