@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="trains-starter" />
+        <module name="supermarket-statistics" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="supermarket-statistics" target="11" />
       <module name="trains-starter" target="11" />
     </bytecodeTargetLevel>
   </component>
