@@ -1,6 +1,7 @@
 import models.PurchaseTracker;
 
 public class SupermarketStatisticsMain {
+    // test
 
     public static void main(String[] args) {
         System.out.println("Welcome to the HvA Supermarket Statistics processor\n");
