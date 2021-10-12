@@ -7,6 +7,12 @@
     <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Train toevoegingen tot attachToRear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/PurchaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/SupermarketStatisticsMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/SupermarketStatisticsMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/test-classes/models/PurchaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/test-classes/models/PurchaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +57,13 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RunManager" selected="JUnit.ProductTest">
-    <configuration name="SupermarketStatisticsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SupermarketStatisticsMain" />
-      <module name="supermarket-statistics" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest.aProductHasAStringRepresentation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="supermarket-statistics" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +92,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
-      <option name="METHOD_NAME" value="aProductHasAStringRepresentation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="models.PurchaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest.canConvertATextLineToAProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseTest.aPurchaseHasAStringRepresentation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="supermarket-statistics" />
       <extension name="coverage">
         <pattern>
@@ -111,15 +107,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
-      <option name="METHOD_NAME" value="canConvertATextLineToAProduct" />
+      <option name="MAIN_CLASS_NAME" value="models.PurchaseTest" />
+      <option name="METHOD_NAME" value="aPurchaseHasAStringRepresentation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
+    <configuration name="PurchaseTest.canConvertATextLineToAPurchase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="models.*" />
@@ -127,7 +123,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
+      <option name="MAIN_CLASS_NAME" value="models.PurchaseTest" />
+      <option name="METHOD_NAME" value="canConvertATextLineToAPurchase" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.PurchaseTrackerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductTest" />
-        <item itemvalue="JUnit.ProductTest.canConvertATextLineToAProduct" />
-        <item itemvalue="JUnit.ProductTest.aProductHasAStringRepresentation" />
-        <item itemvalue="Application.SupermarketStatisticsMain" />
-        <item itemvalue="JUnit.TrainTest" />
+        <item itemvalue="JUnit.PurchaseTrackerTest" />
+        <item itemvalue="JUnit.PurchaseTest" />
+        <item itemvalue="JUnit.PurchaseTest.aPurchaseHasAStringRepresentation" />
+        <item itemvalue="JUnit.PurchaseTest.canConvertATextLineToAPurchase" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +172,8 @@
       <workItem from="1633343270105" duration="226000" />
       <workItem from="1633369574002" duration="693000" />
       <workItem from="1633691654228" duration="618000" />
-      <workItem from="1634023209416" duration="5872000" />
+      <workItem from="1634023209416" duration="10837000" />
+      <workItem from="1634036087860" duration="3349000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>

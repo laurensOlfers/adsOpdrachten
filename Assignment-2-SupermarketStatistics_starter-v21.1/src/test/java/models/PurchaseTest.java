@@ -15,7 +15,7 @@ public class PurchaseTest {
 
     @BeforeEach
     private void setup() {
-        stroopwafels = new Product(111111111111111L, "Stroopwafels 10st", 1.23);
+        stroopwafels = new Product(111111111111111L, "Stroopwafels 10st", 12.30);
         marsbar = new Product(222222222222222L, "Mars bar", 0.86);
         snickers = new Product(333333333333333L, "Snickers", 0.97);
         products = List.of(stroopwafels,marsbar,snickers);

@@ -1,6 +1,6 @@
 package models;
 
-import java.awt.*;
+
 
 public class Product {
     private final long barcode;
@@ -15,6 +15,7 @@ public class Product {
         this(barcode);
         this.title = title;
         this.price = price;
+
     }
 
     /**
@@ -24,9 +25,11 @@ public class Product {
      *          or null if the textLine is corrupt or incomplete
      */
     public static Product fromLine(String textLine) {
-        //barcode is altijd 15 lang
+        //eerst gekeken naar de eerste comma.
         // cast een string naar long
-        String stringBarcode = textLine.substring(0,15);
+        int lengthBarcode = textLine.indexOf(",");
+
+        String stringBarcode = textLine.substring(0,lengthBarcode);
         long barcode = Long.parseLong(stringBarcode);
 
         // hier zoek ik naar een , na index 17
@@ -47,7 +50,13 @@ public class Product {
             priceString= pricesStringChecked;
         }
             double price = Double.parseDouble(priceString);
+
+
+
             Product newProduct  = new Product(barcode,title,price);
+
+
+
         return newProduct;
     }
 
@@ -86,5 +95,4 @@ public class Product {
     }
 
 
-    // TODO add public and private methods as per your requirements
 }
