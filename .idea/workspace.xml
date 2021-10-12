@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Train toevoegingen tot attachToRear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Locomotive.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Locomotive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Train.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Wagon.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/main/java/models/Wagon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/TrainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/src/test/java/models/TrainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/TrainsMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/TrainsMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Train.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Train.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Wagon.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/target/classes/models/Wagon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="Application.SupermarketStatisticsMain">
+  <component name="RunManager" selected="JUnit.ProductTest">
     <configuration name="SupermarketStatisticsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SupermarketStatisticsMain" />
       <module name="supermarket-statistics" />
@@ -64,13 +58,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.aProductHasAStringRepresentation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
+      <option name="METHOD_NAME" value="aProductHasAStringRepresentation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.canConvertATextLineToAProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
+      <option name="METHOD_NAME" value="canConvertATextLineToAProduct" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,61 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrainTest.T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
-      <option name="METHOD_NAME" value="T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainTest.T12_ATrainWithSevenWagonsShouldReportThose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
-      <option name="METHOD_NAME" value="T12_ATrainWithSevenWagonsShouldReportThose" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrainTest.T16_CantInsertWagonAlreadyOnTrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="trains-starter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.TrainTest" />
-      <option name="METHOD_NAME" value="T16_CantInsertWagonAlreadyOnTrain" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.ProductTest.canConvertATextLineToAProduct" />
+        <item itemvalue="JUnit.ProductTest.aProductHasAStringRepresentation" />
         <item itemvalue="Application.SupermarketStatisticsMain" />
         <item itemvalue="JUnit.TrainTest" />
-        <item itemvalue="JUnit.TrainTest.T10_ASystemPrintlnNeedsPrintsCorrectlyAfterMove" />
-        <item itemvalue="JUnit.TrainTest.T12_ATrainWithSevenWagonsShouldReportThose" />
-        <item itemvalue="JUnit.TrainTest.T16_CantInsertWagonAlreadyOnTrain" />
       </list>
     </recent_temporary>
   </component>
@@ -162,6 +157,10 @@
       <workItem from="1632506618413" duration="10104000" />
       <workItem from="1632391220033" duration="20875000" />
       <workItem from="1633003469545" duration="38950000" />
+      <workItem from="1633343270105" duration="226000" />
+      <workItem from="1633369574002" duration="693000" />
+      <workItem from="1633691654228" duration="618000" />
+      <workItem from="1634023209416" duration="5872000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
