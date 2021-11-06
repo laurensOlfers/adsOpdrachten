@@ -15,6 +15,8 @@ public class PurchaseTracker {
     private OrderedList<Purchase> purchases;      // the aggregated volumes of all purchases of all products across all branches
 
     public PurchaseTracker() {
+        products = new OrderedArrayList<Product>();
+        purchases = new OrderedArrayList<Purchase>();
         // TODO initialize products and purchases with an empty ordered list which sorts items by barcode.
         //  Use your generic implementation class OrderedArrayList
     }
@@ -99,6 +101,7 @@ public class PurchaseTracker {
      */
     public void showTotals() {
         // TODO provide the mappers to calculate the specified aggregated quantities
+
         System.out.printf("Total volume of all purchases: %.0f\n",
 
                 null);
@@ -125,6 +128,8 @@ public class PurchaseTracker {
         while (scanner.hasNext()) {
             // input another line with author information
             String line = scanner.nextLine();
+            E newObject = converter.apply(line);
+            items.add(newObject);
 
             // TODO convert the line to an instance of E
 
@@ -132,7 +137,7 @@ public class PurchaseTracker {
             // TODO add the item to the list of items
 
         }
-        //System.out.printf("Imported %d items from %s.\n", items.size() - originalNumItems, filePath);
+        System.out.printf("Imported %d items from %s.\n", items.size() - originalNumItems, filePath);
     }
 
     /**

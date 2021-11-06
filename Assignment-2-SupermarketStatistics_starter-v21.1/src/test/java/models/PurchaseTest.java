@@ -39,6 +39,6 @@ public class PurchaseTest {
     @Test
     public void aPurchaseHasAStringRepresentation() {
         Purchase purchase1 = Purchase.fromLine("111111111111111, 10", products);
-        assertEquals("111111111111111/Stroopwafels 10st/10/12.30", purchase1.toString());
+        assertEquals("111111111111111/Stroopwafels 10st/10/12,30", purchase1.toString());
     }
 }
