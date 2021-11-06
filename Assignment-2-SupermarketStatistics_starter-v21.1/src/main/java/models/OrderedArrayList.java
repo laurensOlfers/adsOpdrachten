@@ -1,5 +1,6 @@
 package models;
 
+import java.util.Collection;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.function.BinaryOperator;
@@ -45,7 +46,23 @@ public class OrderedArrayList<E>
     // TODO override the ArrayList.add(index, item), ArrayList.remove(index) and Collection.remove(object) methods
     //  such that they sustain the representation invariant of OrderedArrayList
     //  (hint: only change nSorted as required to guarantee the representation invariant, do not invoke a sort)
+    @Override
+    public void add(int index, E item){
+        super.add(index, item);
+        if (nSorted >= index) nSorted = index-1;
+    }
 
+    @Override
+    public E remove(int index){
+        if (nSorted >= index) nSorted = index-1;
+        return super.remove(index);
+    }
+
+    @Override
+    public boolean remove(Object object){
+        nSorted = indexOfByBinarySearch((E) object)-1;
+        return super.remove(object);
+    }
 
     @Override
     public void sort() {
@@ -83,6 +100,26 @@ public class OrderedArrayList<E>
      * @return              the position index of the found item in the arrayList, or -1 if no item matches the search item.
      */
     public int indexOfByIterativeBinarySearch(E searchItem) {
+        int from = 0;
+        int to = nSorted;
+
+        while (from <= to){
+            int midIndex = (to + from)/2;
+            int comparison = this.ordening.compare(searchItem,this.get(midIndex));
+
+            if (comparison < 0){
+                to = midIndex - 1;
+            }
+            else if (comparison > 0){
+                from = midIndex + 1;
+            }
+            else return midIndex;
+        }
+        int linComparison;
+        for (int i = nSorted; i < this.size(); i++){
+            linComparison = this.ordening.compare(this.get(i),searchItem);
+            if (linComparison == 0) return i;
+        }
 
         // TODO implement an iterative binary search on the sorted section of the arrayList, 0 <= index < nSorted
         //   to find the position of an item that matches searchItem (this.ordening comparator yields a 0 result)
@@ -103,13 +140,32 @@ public class OrderedArrayList<E>
      * @return              the position index of the found item in the arrayList, or -1 if no item matches the search item.
      */
     public int indexOfByRecursiveBinarySearch(E searchItem) {
+        return indexOfByRecursiveBinarySearch(searchItem, 0, this.size());
 
         // TODO implement a recursive binary search on the sorted section of the arrayList, 0 <= index < nSorted
         //   to find the position of an item that matches searchItem (this.ordening comparator yields a 0 result)
 
         // TODO if no match was found, attempt a linear search of searchItem in the section nSorted <= index < size()
+    }
 
-        return -1;
+    public int indexOfByRecursiveBinarySearch(E searchItem, int from, int to) {
+        int midIndex = (to + from)/2;
+        int comparison = this.ordening.compare(searchItem,this.get(midIndex));
+        if (from > to) {
+            int linComparison;
+            for (int i = nSorted; i < this.size(); i++){
+                linComparison = this.ordening.compare(searchItem, this.get(i));
+                if (linComparison == 0) return i;
+            }
+            return -1;
+            }
+        if (comparison < 0){
+            return indexOfByRecursiveBinarySearch(searchItem, from, midIndex-1);
+        }
+        else if (comparison > 0){
+            return indexOfByRecursiveBinarySearch(searchItem, midIndex+1, to);
+        }
+        else return midIndex;
     }
 
     /**
@@ -132,10 +188,14 @@ public class OrderedArrayList<E>
             this.add(newItem);
             return true;
         } else {
+            merger.apply(this.get(matchedItemIndex), newItem);
+            return false;
+
+
             // TODO retrieve the matched item and
             //  replace the matched item in the list with the merger of the matched item and the newItem
 
-            return false;
+
         }
     }
 }
