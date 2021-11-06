@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Train toevoegingen tot attachToRear">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/OrderedArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/OrderedArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/OrderedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/OrderedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/PurchaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/PurchaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/OrderedArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/OrderedArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" afterDir="false" />
+    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden">
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/OrderedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/OrderedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/test-classes/models/PurchaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/test-classes/models/PurchaseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +162,7 @@
       <workItem from="1634036087860" duration="3349000" />
       <workItem from="1635671072134" duration="20702000" />
       <workItem from="1635963519379" duration="1631000" />
-      <workItem from="1636019350582" duration="17458000" />
+      <workItem from="1636019350582" duration="18021000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
@@ -177,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632472517388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden">
+      <created>1636207733122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636207733122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="dit is een sout" />
-    <option name="LAST_COMMIT_MESSAGE" value="dit is een sout" />
+    <MESSAGE value="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
