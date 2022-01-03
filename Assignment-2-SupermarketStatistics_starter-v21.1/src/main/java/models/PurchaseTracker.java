@@ -27,12 +27,12 @@ public class PurchaseTracker {
      */
     public void importProductsFromVault(String resourceName) {
         this.products.clear();
-
         // load all products from the text file
         importItemsFromFile(this.products,
                 PurchaseTracker.class.getResource(resourceName).getPath(),
                 Product::fromLine);
 
+        System.out.println(this.products.size());
         // sort the products for efficient later retrieval
         this.products.sort();
 

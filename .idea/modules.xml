@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/adsPracticum.iml" filepath="$PROJECT_DIR$/.idea/adsPracticum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/archery.iml" filepath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/archery.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/supermarket-statistics.iml" filepath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/supermarket-statistics.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/trains-starter.iml" filepath="$PROJECT_DIR$/Assignment-1-Trains-project-starter-v21.2/trains-starter.iml" />
     </modules>

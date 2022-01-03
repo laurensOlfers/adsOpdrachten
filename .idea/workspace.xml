@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/src/main/java/nl/hva/ict/ads/Archer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/src/main/java/nl/hva/ict/ads/Archer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/src/main/java/nl/hva/ict/ads/SorterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/src/main/java/nl/hva/ict/ads/SorterImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -51,10 +57,14 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="JUnit.PurchaseTest">
-    <configuration name="SupermarketStatisticsMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SupermarketStatisticsMain" />
-      <module name="supermarket-statistics" />
+  <component name="RunManager" selected="JUnit.PurchaseTrackerTest.importVaultCheck">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,6 +79,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductsListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -89,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseTest.aPurchaseHasAStringRepresentation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="supermarket-statistics" />
       <extension name="coverage">
         <pattern>
@@ -98,9 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.PurchaseTest" />
-      <option name="METHOD_NAME" value="aPurchaseHasAStringRepresentation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="models.PurchaseTrackerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PurchaseTrackerTest.importVaultCheck" />
+        <item itemvalue="JUnit.PurchaseTrackerTest" />
         <item itemvalue="JUnit.PurchaseTest" />
         <item itemvalue="JUnit.ProductTest" />
-        <item itemvalue="JUnit.PurchaseTrackerTest.importVaultCheck" />
-        <item itemvalue="Application.SupermarketStatisticsMain" />
-        <item itemvalue="JUnit.PurchaseTest.aPurchaseHasAStringRepresentation" />
+        <item itemvalue="JUnit.ProductsListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +178,7 @@
       <workItem from="1635963519379" duration="1631000" />
       <workItem from="1636019350582" duration="18021000" />
       <workItem from="1639045409122" duration="216000" />
+      <workItem from="1639647554866" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
@@ -219,9 +244,14 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/PurchaseTrackerTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="46" />
+          <url>file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,7 +1,6 @@
 package nl.hva.ict.ads;
 
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class SorterImpl<E> implements Sorter<E> {
 
@@ -19,7 +18,7 @@ public class SorterImpl<E> implements Sorter<E> {
         for (int i = 0; i < items.size(); i++) {
 
             int sortIndex = i;
-            for (int j = i+1; j < items.size(); j++) {
+            for (int j = i + 1; j < items.size(); j++) {
                 if (comparator.compare(items.get(j), items.get(sortIndex)) < 0) {
                     sortIndex = j;
                 }
@@ -58,12 +57,78 @@ public class SorterImpl<E> implements Sorter<E> {
      * @param comparator
      * @return the items sorted in place
      */
-    private void quickSortPart(List<E> items, int from, int to, Comparator<E> comparator) {
+//    private void quickSortPart(List<E> items, int from, int to, Comparator<E> comparator) {
+//        if (from>=to){
+//            return;
+//        }
+//
+//        E pivot = items.get(from);
+//        int leftPointer = from;
+//        int rightPointer = to;
+//
+//        while (leftPointer < rightPointer) {
+//
+//            while (comparator.compare(items.get(leftPointer), pivot) <= 0 && leftPointer < rightPointer) {
+//                leftPointer++;
+//            }
+//            while (comparator.compare(items.get(rightPointer), pivot) >= 0 && leftPointer < rightPointer) {
+//                rightPointer--;
+//            }
+//
+//            // swap values at the startIndex and endIndex
+//            swap(items,leftPointer,rightPointer);
+//
+//
+//        }
+//        swap(items,leftPointer,to);
+//        quickSortPart(items,from,leftPointer-1,comparator);
+//        quickSortPart(items,leftPointer+1,to,comparator);
+//    }
 
-        // TODO quick sort the sublist of items between index positions 'from' and 'to' inclusive
-        
+    private  void swap(List<E> items, int from , int to ){
 
+        Collections.swap(items,to,from);
     }
+
+
+    private void quickSortPart(List<E> items, int from, int to, Comparator<E> comparator) {
+        if (from < to) {
+            int pivotIndex = partition(items, from, to, comparator);
+
+            //Left half sorting
+            quickSortPart(items, from, pivotIndex-1, comparator);
+            //Right half sorting
+            quickSortPart(items, pivotIndex+1, to, comparator);
+        }
+    }
+
+    private int partition(List<E> items, int from, int to, Comparator<E> comparator) {
+        E pivot = items.get(from);
+        int low = from + 1;
+        int high = to;
+
+
+        do {
+            while (low <= high && comparator.compare(items.get(low), pivot) <= 0) low++;
+
+            while (low <= high && comparator.compare(pivot, items.get(high)) <= 0) high--;
+
+            if (low <= high) {
+                E lowItem = items.get(low);
+                E highItem = items.get(high);
+                items.set(low, highItem);
+                items.set(high, lowItem);
+            }
+
+        } while (low <= high);
+
+        E newItem = items.get(high);
+        items.set(high, pivot);
+        items.set(from, newItem);
+
+        return high;
+    }
+
 
     /**
      * Identifies the lead collection of numTops items according to the ordening criteria of comparator
