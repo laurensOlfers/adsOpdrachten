@@ -6,13 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="trains-starter" />
         <module name="supermarket-statistics" />
+        <module name="knmi-climate-analysis" />
+        <module name="trains-starter" />
         <module name="archery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="archery" target="11" />
+      <module name="knmi-climate-analysis" target="11" />
       <module name="supermarket-statistics" target="11" />
       <module name="trains-starter" target="11" />
     </bytecodeTargetLevel>

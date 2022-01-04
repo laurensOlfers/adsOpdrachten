@@ -5,14 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/Assignment-4-KNMIClimateAnalysis-v21.1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/knmi-climate-analysis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/ClimateAnalysisMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/models/ClimateTracker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/models/Measurement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/models/Station.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_235_DeKooy.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_260_DeBilt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_280_Eelde.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_310_Vlissingen.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_380_Maastricht.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/stations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/measurements/test_260_DeBilt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/measurements/test_310_Vlissingen.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/measurements/test_380_Maastricht.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/stations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/test/java/ClimateTrackerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/test/java/MeasurementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/test/java/StationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/src/main/java/nl/hva/ict/ads/SorterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-3-Archery_starter-v21.1/src/main/java/nl/hva/ict/ads/SorterImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,74 +81,42 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
-  <component name="RunManager" selected="JUnit.PurchaseTrackerTest.importVaultCheck">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MeasurementTest.canConvertATextLineToAMeasurement">
+    <configuration name="ClimateAnalysisMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClimateAnalysisMain" />
+      <module name="knmi-climate-analysis" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="knmi-climate-analysis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MeasurementTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="supermarket-statistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductsListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="supermarket-statistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.ProductsListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="supermarket-statistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.PurchaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PurchaseTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="supermarket-statistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.PurchaseTrackerTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="MeasurementTest.canConvertATextLineToAMeasurement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="knmi-climate-analysis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MeasurementTest" />
+      <option name="METHOD_NAME" value="canConvertATextLineToAMeasurement" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,13 +137,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="knmi-climate-analysis" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MeasurementTest.canConvertATextLineToAMeasurement" />
+        <item itemvalue="JUnit.MeasurementTest" />
+        <item itemvalue="JUnit.StationTest" />
+        <item itemvalue="Application.ClimateAnalysisMain" />
         <item itemvalue="JUnit.PurchaseTrackerTest.importVaultCheck" />
-        <item itemvalue="JUnit.PurchaseTrackerTest" />
-        <item itemvalue="JUnit.PurchaseTest" />
-        <item itemvalue="JUnit.ProductTest" />
-        <item itemvalue="JUnit.ProductsListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +180,7 @@
       <workItem from="1636019350582" duration="18021000" />
       <workItem from="1639045409122" duration="216000" />
       <workItem from="1639647554866" duration="727000" />
+      <workItem from="1641294989199" duration="2085000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
