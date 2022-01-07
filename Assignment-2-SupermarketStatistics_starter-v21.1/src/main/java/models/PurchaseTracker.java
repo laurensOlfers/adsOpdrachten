@@ -15,8 +15,8 @@ public class PurchaseTracker {
     private OrderedList<Purchase> purchases;      // the aggregated volumes of all purchases of all products across all branches
 
     public PurchaseTracker() {
-        products = new OrderedArrayList<Product>();
-        purchases = new OrderedArrayList<Purchase>();
+        products = new OrderedArrayList<Product>(Comparator.comparing(Product::getBarcode));
+        purchases = new OrderedArrayList<Purchase>(Comparator.comparing(Purchase::getBarcode));
         // TODO initialize products and purchases with an empty ordered list which sorts items by barcode.
         //  Use your generic implementation class OrderedArrayList
     }
@@ -65,6 +65,10 @@ public class PurchaseTracker {
             //  retrieve a list of all files and sub folders in this directory
             File[] filesInDirectory = Objects.requireNonNullElse(file.listFiles(), new File[0]);
 
+            for (int i = 0; i < filesInDirectory.length; i++) {
+                mergePurchasesFromFileRecursively(filesInDirectory[i].toString());
+            }
+            System.out.println("Dit is filesdirectory " + filesInDirectory);
             // TODO merge all purchases of all files and sub folders from the filesInDirectory list, recursively.
 
 
@@ -117,7 +121,7 @@ public class PurchaseTracker {
      * @param converter     a function that can convert a text line into a new item instance
      * @param <E>           the (generic) type of each item
      */
-    public static <E> void importItemsFromFile(List<E> items, String filePath, Function<String,E> converter) {
+    public static <E> void importItemsFromFile(OrderedList<E> items, String filePath, Function<String,E> converter) {
         int originalNumItems = items.size();
 
         Scanner scanner = createFileScanner(filePath);
@@ -130,12 +134,6 @@ public class PurchaseTracker {
             String line = scanner.nextLine();
             E newObject = converter.apply(line);
             items.add(newObject);
-
-            // TODO convert the line to an instance of E
-
-
-            // TODO add the item to the list of items
-
         }
         System.out.printf("Imported %d items from %s.\n", items.size() - originalNumItems, filePath);
     }
@@ -154,16 +152,16 @@ public class PurchaseTracker {
         // re-sort the accumulated purchases for efficient searching
         this.purchases.sort();
 
-        // TODO import all purchases from the specified file into the newPurchases list
         importItemsFromFile(newPurchases, filePath,
-                null
+                (l) -> Purchase.fromLine(l, this.products)
         );
 
-        // TODO merge all purchases from the newPurchases list into this.purchases
         for (Purchase purchase : newPurchases) {
+
             this.purchases.merge(purchase,
-                    null
-            );
+                    (a, b) -> {a.setCount(a.getCount() + b.getCount());
+                return a;
+            });
         }
 
         int addedCount = purchases.size() - originalNumPurchases;

@@ -33,7 +33,8 @@ public class Purchase {
         // ik doe vervolgens maak ik een String varibale met de aantalen
         //vervolgens parse ik deze naar een int
         int lengthString = textLine.length();
-        String numberString = textLine.substring(17, lengthString);
+
+        String numberString = textLine.substring(lengthBarcode + 2, lengthString);
         int number = Integer.parseInt(numberString);
 
         //als eerst maak ik een product aan met alleen de barcode omdat een indexOf alleen de
@@ -41,6 +42,10 @@ public class Purchase {
         //vervolgens gebruik ik de index om een product te zoeken op de locatie van foundindex
         Product productBarcode = new Product(barcode,null,0.00);
         int foundIndex = products.indexOf(productBarcode);
+        if (foundIndex == -1){
+            return null;
+        }
+
         Product product = products.get(foundIndex);
 
         Purchase newPurchase = new Purchase(product,number);

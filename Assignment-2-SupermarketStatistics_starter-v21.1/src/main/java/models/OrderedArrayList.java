@@ -105,6 +105,9 @@ public class OrderedArrayList<E>
 
         while (from <= to){
             int midIndex = (to + from)/2;
+            if (midIndex == this.size()){
+                return -1;
+            }
             int comparison = this.ordening.compare(searchItem,this.get(midIndex));
 
             if (comparison < 0){
@@ -151,7 +154,7 @@ public class OrderedArrayList<E>
     public int indexOfByRecursiveBinarySearch(E searchItem, int from, int to) {
         int midIndex = (to + from)/2;
         int comparison = this.ordening.compare(searchItem,this.get(midIndex));
-        if (from > to) {
+        if (from >= to) {
             int linComparison;
             for (int i = nSorted; i < this.size(); i++){
                 linComparison = this.ordening.compare(searchItem, this.get(i));
