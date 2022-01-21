@@ -38,7 +38,7 @@ public class Purchase {
         int number = Integer.parseInt(numberString);
 
         //als eerst maak ik een product aan met alleen de barcode omdat een indexOf alleen de
-        //de classe Product accespteert.
+        //de classe Product accepteert.
         //vervolgens gebruik ik de index om een product te zoeken op de locatie van foundindex
         Product productBarcode = new Product(barcode,null,0.00);
         int foundIndex = products.indexOf(productBarcode);

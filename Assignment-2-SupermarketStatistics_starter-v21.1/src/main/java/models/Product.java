@@ -34,8 +34,8 @@ public class Product {
 
         // hier zoek ik naar een , na index 17
         // als deze gevonden is wordt deze opgeslagen in title
-        int endCharTitle = textLine.indexOf(",",17);
-        String title = textLine.substring(17,endCharTitle);
+        int endCharTitle = textLine.indexOf(",",lengthBarcode+1);
+        String title = textLine.substring(lengthBarcode+2,endCharTitle);
 
         //als eerst haal ik de comma weg. vervolgens kijk ik totale lengte.
         //ik check of er nog een comma dit in het laatste gedeelte.

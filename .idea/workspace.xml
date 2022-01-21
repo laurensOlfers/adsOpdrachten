@@ -4,39 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/Assignment-4-KNMIClimateAnalysis-v21.1.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/knmi-climate-analysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/ClimateAnalysisMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/models/ClimateTracker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/models/Measurement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/java/models/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_235_DeKooy.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_260_DeBilt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_280_Eelde.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_310_Vlissingen.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/measurements/etmgeg_380_Maastricht.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/knmi/stations.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/measurements/test_260_DeBilt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/measurements/test_310_Vlissingen.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/measurements/test_380_Maastricht.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/main/resources/test/stations.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/test/java/ClimateTrackerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/test/java/MeasurementTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment-4-KNMIClimateAnalysis_starter-v21.1/src/test/java/StationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="3df33c28-2980-44e3-a5a0-be29c1875bd2" name="Default Changelist" comment="opdracht 2">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/SupermarketStatisticsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/SupermarketStatisticsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/OrderedArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/OrderedArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/ProductsListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/ProductsListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/SupermarketStatisticsMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/SupermarketStatisticsMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/OrderedArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/OrderedArrayList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Purchase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/Purchase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/classes/models/PurchaseTracker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/test-classes/models/ProductsListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/target/test-classes/models/ProductsListTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +61,9 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.MeasurementTest.canConvertATextLineToAMeasurement">
+  <component name="RunManager" selected="JUnit.PurchaseTrackerTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -95,33 +77,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClimateAnalysisMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ClimateAnalysisMain" />
-      <module name="knmi-climate-analysis" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="knmi-climate-analysis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MeasurementTest" />
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeasurementTest.canConvertATextLineToAMeasurement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="knmi-climate-analysis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MeasurementTest" />
-      <option name="METHOD_NAME" value="canConvertATextLineToAMeasurement" />
+    <configuration name="ProductsListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductsListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductsListTest.removeSustainsRepresentationInvariant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.ProductsListTest" />
+      <option name="METHOD_NAME" value="removeSustainsRepresentationInvariant" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PurchaseTrackerTest.importVaultCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PurchaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="supermarket-statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.PurchaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="supermarket-statistics" />
       <extension name="coverage">
         <pattern>
@@ -131,16 +148,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.PurchaseTrackerTest" />
-      <option name="METHOD_NAME" value="importVaultCheck" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="knmi-climate-analysis" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="StationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MeasurementTest.canConvertATextLineToAMeasurement" />
-        <item itemvalue="JUnit.MeasurementTest" />
-        <item itemvalue="JUnit.StationTest" />
-        <item itemvalue="Application.ClimateAnalysisMain" />
-        <item itemvalue="JUnit.PurchaseTrackerTest.importVaultCheck" />
+        <item itemvalue="JUnit.PurchaseTrackerTest" />
+        <item itemvalue="JUnit.PurchaseTest" />
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.ProductsListTest" />
+        <item itemvalue="JUnit.ProductsListTest.removeSustainsRepresentationInvariant" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +188,9 @@
       <workItem from="1639045409122" duration="216000" />
       <workItem from="1639647554866" duration="727000" />
       <workItem from="1641294989199" duration="2085000" />
+      <workItem from="1642604902008" duration="4066000" />
+      <workItem from="1642621769471" duration="6452000" />
+      <workItem from="1642689813985" duration="3771000" />
     </task>
     <task id="LOCAL-00001" summary="dit is een sout">
       <created>1632472517388</created>
@@ -196,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636207733122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="opdracht 2">
+      <created>1641563192508</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641563192508</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +247,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="dit is een sout" />
     <MESSAGE value="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden" />
-    <option name="LAST_COMMIT_MESSAGE" value="Orderedlist en OrderedArrayList. Alleen PurchaseTracker moet gedaan worden" />
+    <MESSAGE value="opdracht 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="opdracht 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -246,23 +264,18 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/main/java/models/PurchaseTracker.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/Assignment-2-SupermarketStatistics_starter-v21.1/src/test/java/models/ProductsListTest.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/adsOpdrachten$TrainTest.ic" NAME="TrainTest Coverage Results" MODIFIED="1633271810532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/adsOpdrachten$ProductsListTest.ic" NAME="ProductsListTest Coverage Results" MODIFIED="1636197665232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>models.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/adsOpdrachten$ProductsListTest.ic" NAME="ProductsListTest Coverage Results" MODIFIED="1636197665232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/adsOpdrachten$TrainTest.ic" NAME="TrainTest Coverage Results" MODIFIED="1633271810532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>models.*</FILTER>
     </SUITE>
   </component>

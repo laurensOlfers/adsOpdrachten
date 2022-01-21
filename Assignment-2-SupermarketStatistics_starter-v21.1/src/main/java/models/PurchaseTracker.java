@@ -108,10 +108,12 @@ public class PurchaseTracker {
 
         System.out.printf("Total volume of all purchases: %.0f\n",
 
-                null);
+                this.purchases.aggregate(Purchase::getCount));
         System.out.printf("Total revenue from all purchases: %.2f\n",
 
-                null);
+                this.purchases.aggregate(a ->
+                        {return a.getCount() * a.getProduct().getPrice();}
+                ));
     }
 
     /**
@@ -121,7 +123,7 @@ public class PurchaseTracker {
      * @param converter     a function that can convert a text line into a new item instance
      * @param <E>           the (generic) type of each item
      */
-    public static <E> void importItemsFromFile(OrderedList<E> items, String filePath, Function<String,E> converter) {
+    public static <E> void importItemsFromFile(List<E> items, String filePath, Function<String,E> converter) {
         int originalNumItems = items.size();
 
         Scanner scanner = createFileScanner(filePath);

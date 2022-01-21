@@ -1,4 +1,7 @@
+import models.Purchase;
 import models.PurchaseTracker;
+
+import java.util.Comparator;
 
 public class SupermarketStatisticsMain {
     // test
@@ -14,10 +17,10 @@ public class SupermarketStatisticsMain {
 
         // TODO provide the comparators that can order the purchases by specified criteria
         purchaseTracker.showTops(5, "worst sales volume",
-                null
+                Comparator.comparing(a -> a.getCount())
         );
         purchaseTracker.showTops(5, "best sales revenue",
-                null
+                Comparator.comparing(Purchase::getCount).reversed()
         );
 
         purchaseTracker.showTotals();
